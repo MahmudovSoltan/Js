@@ -33,5 +33,25 @@ var myCurrentAge = 26
 var myTotalAge = 70
 var resaltLifetimeSupply = lifetimeSupply*(365*(myTotalAge-myCurrentAge))
 
-// console.log(resaltLifetimeSupply);
+console.log(`"You will need ${resaltLifetimeSupply} to last you until the ripe old age of ${myTotalAge}"`);
+
+
+//Besinci tapsiriq 
+
+ var circle = 5
+ var circleRadius = 2*Math.PI*circle
+var  circleArea = Math.PI*circle**2
+//  console.log("cevrenin radiusu "+circleRadius+" budur");
+//  console.log("cevrenin sahesi "+circleArea+" budur");
+
+//Altinci tapsiriq 
+
+
+
+
+
+
+
+
+ 
 
