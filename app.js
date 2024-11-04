@@ -1,57 +1,102 @@
-//  Birinci tapsiriq
+// let  numberOne=5
+// let numberTwo = 10
 
-
-var childerenCount = 5
-var prtnaresName = "Hesen"
-var location = "Azeribaijan"
-var jobTitle = "Devoloper"
-
-// console.log(childerenCount,prtnaresName,location,jobTitle);
-
-
-// Ikinci tapsiriq
-
-
-var myName = "Soltan"
-var myWifeName = "Aysel"
-var myChildren = 2
-// console.log("Menim adim "+myName,"ve menim heyat yoldasim "+myWifeName,"ve bizim ovladlarimizin sayi "+myChildren);
-
-//Ücuncu tapşırıq
-
-var myBirth = 1998
-var furnutureYear = 2030
-var resualtAge = furnutureYear - myBirth
-
-// console.log("men "+furnutureYear+" bu ilde iyulda "+resualtAge+" bu yasda olacam "+"yada iyuldan qabaq olsa bir yas balaca olacam");
-
-// Dorduncu tapsiriq 
-
-
-var lifetimeSupply = 3
-var myCurrentAge = 26
-var myTotalAge = 70
-var resaltLifetimeSupply = lifetimeSupply*(365*(myTotalAge-myCurrentAge))
-
-console.log(`"You will need ${resaltLifetimeSupply} to last you until the ripe old age of ${myTotalAge}"`);
-
-
-//Besinci tapsiriq 
-
- var circle = 5
- var circleRadius = 2*Math.PI*circle
-var  circleArea = Math.PI*circle**2
-//  console.log("cevrenin radiusu "+circleRadius+" budur");
-//  console.log("cevrenin sahesi "+circleArea+" budur");
-
-//Altinci tapsiriq 
-
-
-
-
-
-
-
-
+// if (numberOne<numberTwo) {
+//     console.log("The little number of 5 and 10 is 5.");
  
+    
+// }
+// if(numberTwo>numberOne){
+//     console.log("The greater number of 5 and 10 is 10.");
+// }
+
+// let lenguage = "de"
+
+// if (lenguage=="en") {
+//     console.log("Hello world");
+    
+// } else if (lenguage == "de"){
+//     console.log("Bonjour, le monde!");
+    
+// }
+//  else if (lenguage == "es"){
+//     console.log("¡Hola, mundo!");
+    
+// }
+
+// takes 1 variable, a number score.
+// show a grade for the score, either "A", "B", "C", "D", or "F"
+
+
+// let score = 75
+
+// if (score>=90) {
+//     console.log("A");
+    
+// }
+// else if (score>=80) {
+//     console.log("B");
+    
+// }
+// else if (score>=70) {
+//     console.log("C");
+    
+// }
+// else if (score>=60) {
+//     console.log("D");
+    
+// }
+// else if (score>=51) {
+//     console.log("F");
+    
+// }
+
+//takes 2 variables, a "noun" and a "number".
+//show the number and pluralized form, like "5 cats" or "1 dog".
+
+
+// let noumber = 1
+// let noun = "book"
+
+// if (noumber>1) {
+//     console.log(`${noumber} ${noun}s`);
+    
+// }
+// else if (noumber===1){
+//     console.log(`${noumber} ${noun}`);
+// }
+
+
+
+
+
+  let result = prompt("Sen kimsen ")
+
+  if (result== "cancel") {
+   console.log("Legv edildi")
+    
+  }
+   else if (result== "admin"){
+      let password = prompt("Parolu yaz")
+      if (password == 1234) {
+
+        console.log("Xos gelmisen");
+     
+      }
+      else if(password ==="cancel"){
+        console.log("Cixa bilersiz");
+        
+      }
+      
+      else{
+          console.log("sef koddur");
+        }
+    } 
+    
+    else if (result ===""){
+      console.log("men sizi tanimaram");
+      
+    }
+  
+
 
