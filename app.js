@@ -214,7 +214,99 @@ var list = [1,2,3,4,5,2]
 var listSlice = list.splice(1,1)
 // console.log(listSlice);
 
+let wordLenght = "Hello world"
 
+// console.log(wordLenght.length);
+var elementCount = 4
+var element = 11
+
+var result =Array(elementCount).fill(element)
+// console.log(result);
+
+// Result : [11, 11, 11, 11]
+
+
+let text = "javascript";
+// result: "Javascript"
+
+let text2 = text[0].toUpperCase()
+let text3 = text.slice(2)
+let text4 = text2.concat(text3)
+
+// console.log(text4);
+
+let user = "john doe";
+
+let user_Name = user.toLocaleUpperCase()
+// console.log(user_Name);
+let weather = "Today is a sunny day";
+// Expected Result: "Today is a rainy day"
+
+let nowWeather = weather.replace("sunny","rainy")
+// console.log(nowWeather);
+let sentence = "JavaScript is a funny language"
+// Output: ["JavaScript", "is", "a", "funny", "language"]
+
+//let arrWords = sentence.split(" ")
+// console.log(arrWords);
+
+let str = "JavaScript is a funny language"
+let arrWords =str.split(" ")
+// console.log(arrWords)
+
+// Add the fruit "Orange" to the fruits array.
+// Given: let fruits = ["Apple", "Banana", "Mango"];
+// Expected Result: ["Apple", "Banana", "Mango", "Orange"]
+// Searched fruit: let searchedFruit = "Orange"
+let fruits = ["Apple", "Banana", "Mango"];
+fruits.push("Orange")
+// console.log(fruits);
+let searchedFruit = "Orange"
+if (fruits.includes(searchedFruit)) {
+    // console.log(`axtardiginiz meyve ${searchedFruit} tapildi`);
+
+}else{
+    // console.log("Axtardiginiz meyve yoxdur");
+    
+}
+
+
+let firstNames = ["John", "Jane"];
+let lastNames = ["Doe", "Smith"];
+// Expected Result: ["John", "Jane", "Doe", "Smith"]
+// Alinan neticedeki arrayden ilk ve son element silinmelidir.
+// ["Jane", "Doe"]
+let fullName = firstNames.concat(lastNames)
+// console.log(fullName);
+fullName.shift()
+fullName.pop()
+// console.log(fullName);
+
+
+let word = "JavaScript"
+let arrWord =word.split("").reverse().join("")
+
+// console.log(arrWord);
+
+let fruits2 = ["Apple", "Banana", "Mango", "Orange"];
+
+console.log(fruits2.indexOf("Banana"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
