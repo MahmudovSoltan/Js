@@ -117,7 +117,7 @@
 //   let correctAnswer3 = "C";
 //   let correctAnswer4 = "C";
 //   let correctAnswer5 = "B";
-  
+
 //   let question1 =0
 //   let question2 =0
 //   let question3 =0
@@ -127,7 +127,7 @@
 //   if (q1==correctAnswer1) {
 //     question1 = 1
 //     console.log("question1",question1);
-    
+
 //   }else{
 //     question1=0
 //   }
@@ -155,24 +155,22 @@
 //   const netice = alert(" duz cavablarin sayi "+totalCorrectAnswer)
 // }
 
-
-
-///BIRINCI GUNUN SINIF TAPSIRIQLARI 
+///BIRINCI GUNUN SINIF TAPSIRIQLARI
 
 //BIRNICI TAPSIRIQ
-var array1 = [1, 2, 3];
-var array2 = [2, 30, 1];
+// var array1 = [1, 2, 3];
+// var array2 = [2, 30, 1];
 
-var array3 = array1.concat(array2)
+// var array3 = array1.concat(array2)
 // console.log(array3);
 // output: [1, 2, 3, 2, 30, 1]
 
 //IKINCI TAPSIRIQ
 
-var list1 = [7, 9, 0, -2]
-var list2 = [[1],3]
-var resultList1=list1.slice(0,1)
-var resultList2 = list2.slice(0,1)
+// var list1 = [7, 9, 0, -2]
+// var list2 = [[1],3]
+// var resultList1=list1.slice(0,1)
+// var resultList2 = list2.slice(0,1)
 // console.log(resultList1);
 // console.log(resultList2);
 // Expected Output :
@@ -180,133 +178,170 @@ var resultList2 = list2.slice(0,1)
 // [1]
 
 //UCNCU TAPSIRIQ
-var list = [9,9,9,4,6,2]
+// var list = [9,9,9,4,6,2]
 // result :"9-9-9-4-6-2"
 // var listJoin = list.join("-")
 // console.log(listJoin); belede olur
-// console.log(list.join("-")); belede 
+// console.log(list.join("-")); belede
 
-
-//DORDUNCU TAPSIRIQ 
-var student_list =["Marry","Ali","Sophia","John"]
-var studentName = student_list.indexOf("John")
+//DORDUNCU TAPSIRIQ
+// var student_list =["Marry","Ali","Sophia","John"]
+// var studentName = student_list.indexOf("John")
 // console.log(studentName);
-var result = `${student_list[studentName]} is a student`
+// var result = `${student_list[studentName]} is a student`
 // console.log(result);
 // result: "John is a student"
 
-//BESINCI TAPSIRIQ 
-let array = [1, 2, 3, 4, 5];
+//BESINCI TAPSIRIQ
+// let array = [1, 2, 3, 4, 5];
 // Output: [5, 4, 3, 2, 1]
-let arr= array.reverse()
+// let arr= array.reverse()
 // console.log(arr);
 
-// ALTINCI TAPSIRIQ 
+// ALTINCI TAPSIRIQ
 
-let arrayFlat = [[1, 2], [3, 4], [5, 6]];
+// let arrayFlat = [[1, 2], [3, 4], [5, 6]];
 // Output: [1, 2, 3, 4, 5, 6]
-let arrayFlat2 = arrayFlat.flat(1)
+// let arrayFlat2 = arrayFlat.flat(1)
 // console.log(arrayFlat2);
 
-//YEDDINCI TAPSIRIQ 
-var list = [1,2,3,4,5,2]
+//YEDDINCI TAPSIRIQ
+// var list = [1,2,3,4,5,2]
 // result: 2
-var listSlice = list.splice(1,1)
+// var listSlice = list.splice(1,1)
 // console.log(listSlice);
 
-let wordLenght = "Hello world"
+// let wordLenght = "Hello world"
 
-// console.log(wordLenght.length);
-var elementCount = 4
-var element = 11
+// // console.log(wordLenght.length);
+// var elementCount = 4
+// var element = 11
 
-var result =Array(elementCount).fill(element)
+// var result =Array(elementCount).fill(element)
 // console.log(result);
 
 // Result : [11, 11, 11, 11]
 
-
-let text = "javascript";
+// let text = "javascript";
 // result: "Javascript"
 
-let text2 = text[0].toUpperCase()
-let text3 = text.slice(2)
-let text4 = text2.concat(text3)
+// let text2 = text[0].toUpperCase()
+// let text3 = text.slice(2)
+// let text4 = text2.concat(text3)
 
 // console.log(text4);
 
-let user = "john doe";
+// let user = "john doe";
 
-let user_Name = user.toLocaleUpperCase()
+// let user_Name = user.toLocaleUpperCase()
 // console.log(user_Name);
-let weather = "Today is a sunny day";
+// let weather = "Today is a sunny day";
 // Expected Result: "Today is a rainy day"
 
-let nowWeather = weather.replace("sunny","rainy")
+// let nowWeather = weather.replace("sunny","rainy")
 // console.log(nowWeather);
-let sentence = "JavaScript is a funny language"
+// let sentence = "JavaScript is a funny language"
 // Output: ["JavaScript", "is", "a", "funny", "language"]
 
 //let arrWords = sentence.split(" ")
 // console.log(arrWords);
 
-let str = "JavaScript is a funny language"
-let arrWords =str.split(" ")
+// let str = "JavaScript is a funny language"
+// let arrWords =str.split(" ")
 // console.log(arrWords)
 
 // Add the fruit "Orange" to the fruits array.
 // Given: let fruits = ["Apple", "Banana", "Mango"];
 // Expected Result: ["Apple", "Banana", "Mango", "Orange"]
 // Searched fruit: let searchedFruit = "Orange"
-let fruits = ["Apple", "Banana", "Mango"];
-fruits.push("Orange")
+// let fruits = ["Apple", "Banana", "Mango"];
+// fruits.push("Orange")
 // console.log(fruits);
-let searchedFruit = "Orange"
-if (fruits.includes(searchedFruit)) {
-    // console.log(`axtardiginiz meyve ${searchedFruit} tapildi`);
+// let searchedFruit = "Orange"
+// if (fruits.includes(searchedFruit)) {
+//     // console.log(`axtardiginiz meyve ${searchedFruit} tapildi`);
 
-}else{
-    // console.log("Axtardiginiz meyve yoxdur");
-    
-}
+// }else{
+//     // console.log("Axtardiginiz meyve yoxdur");
 
+// }
 
-let firstNames = ["John", "Jane"];
-let lastNames = ["Doe", "Smith"];
+// let firstNames = ["John", "Jane"];
+// let lastNames = ["Doe", "Smith"];
 // Expected Result: ["John", "Jane", "Doe", "Smith"]
 // Alinan neticedeki arrayden ilk ve son element silinmelidir.
 // ["Jane", "Doe"]
-let fullName = firstNames.concat(lastNames)
+// let fullName = firstNames.concat(lastNames)
 // console.log(fullName);
-fullName.shift()
-fullName.pop()
+// fullName.shift()
+// fullName.pop()
 // console.log(fullName);
 
-
-let word = "JavaScript"
-let arrWord =word.split("").reverse().join("")
+// let word = "JavaScript"
+// let arrWord =word.split("").reverse().join("")
 
 // console.log(arrWord);
 
-let fruits2 = ["Apple", "Banana", "Mango", "Orange"];
+// let fruits2 = ["Apple", "Banana", "Mango", "Orange"];
 
-console.log(fruits2.indexOf("Banana"));
-
-
+// console.log(fruits2.indexOf("Banana"));
 
 
+//---------------------------///
 
+//AYIN 11 OLAN SINIF TAPSIRIQLARI
+//
+//  let ar = [1, 2, 3, 4];
+// let total_arr = 0
+// for (let i = 0; i < ar.length; i++) {
+//     total_arr += ar[i]
+// }
+// console.log(total_arr);
 
+// let number = 5
+// let factorial =2
 
+// for (let i = 1; i < 5; i++) {
+//   factorial += factorial*i
+// }
+// console.log(factorial);
 
+// let arr = [3, 7, 2, 8, 5];
 
+// for (let i = 0; i < arr.length; i++) {
+//   if ( max >arr[i] ) {
+//       let max = arr[i];
+//     console.log( max );
+//   }
+// }
 
-
-
-
-
-
+// let word = "hello"
+// let r_word =[]
+// let reverce
+// for (let i = word.length; i>=0; i--) {
+//     r_word.push(word[i])    
+// }
  
+// let prime = 7
+// for (let i = 2; i < prime; i++) {
+//     if (prime % i == 0) {
+//         console.log("prime is true");
+//         break
+//     } 
+//     console.log("prime is false");
+//  }
+
+// let arr = [1,2,3,4,5,6,8,9,10]
+// let dobule_arr = []
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] %2 ==0) {
+//       dobule_arr.push(arr[i])  
+//     }
+    
+// }
+
+// console.log(dobule_arr);
+
 
 
 
