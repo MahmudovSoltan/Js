@@ -286,7 +286,6 @@
 
 // console.log(fruits2.indexOf("Banana"));
 
-
 //---------------------------///
 
 //AYIN 11 OLAN SINIF TAPSIRIQLARI
@@ -319,30 +318,82 @@
 // let r_word =[]
 // let reverce
 // for (let i = word.length; i>=0; i--) {
-//     r_word.push(word[i])    
+//     r_word.push(word[i])
 // }
- 
+
 // let prime = 7
 // for (let i = 2; i < prime; i++) {
 //     if (prime % i == 0) {
 //         console.log("prime is true");
 //         break
-//     } 
+//     }
 //     console.log("prime is false");
 //  }
 
-// let arr = [1,2,3,4,5,6,8,9,10]
-// let dobule_arr = []
-// for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] %2 ==0) {
-//       dobule_arr.push(arr[i])  
-//     }
+ let pet = "golden retriever";
+
+ console.log(pet.toUpperCase());    // toUpperCase vasitesi ile stringin butun heriflerinboyuduruk 
+ 
+ let question = "Can you solve this problem?";
+ let length = question.length   //length vasitesi ile stringin uzunlugun tapiriq ve basqa variable ye menimsedirik 
+ console.log(length);
+
+ let activity = "This game is boring"
+ let newActivity = activity.replace("boring","exciting") // replace  stringde olan bir herifin ve ya sozun tekrar edilmesi ucndur birnci yerde yazilan soz deyisdirmek istediyimiz ikinci soz ise yazmaq istediyimiz sozdur
+ 
+ console.log(newActivity);
+
+  let headline = "Choose Your Adventure!";
+
+  let result = headline.split(" ") // burda stringi arr ye cevirik
+ let result2 = result.indexOf("Adventure!") // burda axtardigimiz soun indeksin tapiriq 
+ let  chooseWord = result[result2] // burdada hemen indeksde olan sozu chooseWord -e menimsedirik
+ console.log(chooseWord);
+
+ let desserts = ["Ice Cream", "Pie", "Pudding"];
+ desserts.pop()  // arryin axirinci elementin silen method
+ console.log(desserts);
+
+
+//  . Check if the cities array includes "Paris".//
+ let cities = ["London", "New York", "Tokyo"];
+let check = cities.includes("Paris")
+console.log(check); // cavab false dur cunki bu soz burda yoxdu
+
+
+let cars = ["Sedan", "Coupe"];
+let trucks = ["Pickup", "SUV"];
+
+let trafic = cars.concat(trucks)// concat vasitesi ile iki arr birlesdirilir
+console.log(trafic); //[ 'Sedan', 'Coupe', 'Pickup', 'SUV' ]
+
+// Find the index of "Pie" in the desserts array.
+ let desserts2 = ["Ice Cream", "Pie", "Pudding", "Cake"];
+ let checkDesserts2 = desserts2.indexOf("Pie") //indexOf vasitesiyle axtardigimiz sozun arr in necenci indeksdeki element oldugun bilirik
+ console.log(checkDesserts2);
+
+  let word = "Technology";
+  let word2 = word.split("") // burda stringi arr ceviririk
+  let reverceWord = [] // burdaki arr yuxaridaki herifleri yigmaq ucun saxlayiriq 
+  for (let i = word2.length; i >=0; i--) {
+    reverceWord.push(word2[i]) // burda arr in indexlerin tersine yazdiririq ve menin indexsdeolan herifleri push metodu vasitesiyle bos olan arr qoyuruq
     
-// }
+    
+  }
+  console.log(reverceWord.join("")); // burda herifleri birlesdiririk
+  
+  
+ 
 
-// console.log(dobule_arr);
 
 
 
 
+
+ 
+ 
+  
+ 
+
+ 
 
