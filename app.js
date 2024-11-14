@@ -330,70 +330,240 @@
 //     console.log("prime is false");
 //  }
 
- let pet = "golden retriever";
+//  let pet = "golden retriever";
 
- console.log(pet.toUpperCase());    // toUpperCase vasitesi ile stringin butun heriflerinboyuduruk 
- 
- let question = "Can you solve this problem?";
- let length = question.length   //length vasitesi ile stringin uzunlugun tapiriq ve basqa variable ye menimsedirik 
- console.log(length);
+//  console.log(pet.toUpperCase());    // toUpperCase vasitesi ile stringin butun heriflerinboyuduruk
 
- let activity = "This game is boring"
- let newActivity = activity.replace("boring","exciting") // replace  stringde olan bir herifin ve ya sozun tekrar edilmesi ucndur birnci yerde yazilan soz deyisdirmek istediyimiz ikinci soz ise yazmaq istediyimiz sozdur
- 
- console.log(newActivity);
+//  let question = "Can you solve this problem?";
+//  let length = question.length   //length vasitesi ile stringin uzunlugun tapiriq ve basqa variable ye menimsedirik
+//  console.log(length);
 
-  let headline = "Choose Your Adventure!";
+//  let activity = "This game is boring"
+//  let newActivity = activity.replace("boring","exciting") // replace  stringde olan bir herifin ve ya sozun tekrar edilmesi ucndur birnci yerde yazilan soz deyisdirmek istediyimiz ikinci soz ise yazmaq istediyimiz sozdur
 
-  let result = headline.split(" ") // burda stringi arr ye cevirik
- let result2 = result.indexOf("Adventure!") // burda axtardigimiz soun indeksin tapiriq 
- let  chooseWord = result[result2] // burdada hemen indeksde olan sozu chooseWord -e menimsedirik
- console.log(chooseWord);
+//  console.log(newActivity);
 
- let desserts = ["Ice Cream", "Pie", "Pudding"];
- desserts.pop()  // arryin axirinci elementin silen method
- console.log(desserts);
+//   let headline = "Choose Your Adventure!";
 
+//   let result = headline.split(" ") // burda stringi arr ye cevirik
+//  let result2 = result.indexOf("Adventure!") // burda axtardigimiz soun indeksin tapiriq
+//  let  chooseWord = result[result2] // burdada hemen indeksde olan sozu chooseWord -e menimsedirik
+//  console.log(chooseWord);
 
-//  . Check if the cities array includes "Paris".//
- let cities = ["London", "New York", "Tokyo"];
-let check = cities.includes("Paris")
-console.log(check); // cavab false dur cunki bu soz burda yoxdu
+//  let desserts = ["Ice Cream", "Pie", "Pudding"];
+//  desserts.pop()  // arryin axirinci elementin silen method
+//  console.log(desserts);
 
+// //  . Check if the cities array includes "Paris".//
+//  let cities = ["London", "New York", "Tokyo"];
+// let check = cities.includes("Paris")
+// console.log(check); // cavab false dur cunki bu soz burda yoxdu
 
-let cars = ["Sedan", "Coupe"];
-let trucks = ["Pickup", "SUV"];
+// let cars = ["Sedan", "Coupe"];
+// let trucks = ["Pickup", "SUV"];
 
-let trafic = cars.concat(trucks)// concat vasitesi ile iki arr birlesdirilir
-console.log(trafic); //[ 'Sedan', 'Coupe', 'Pickup', 'SUV' ]
+// let trafic = cars.concat(trucks)// concat vasitesi ile iki arr birlesdirilir
+// console.log(trafic); //[ 'Sedan', 'Coupe', 'Pickup', 'SUV' ]
 
-// Find the index of "Pie" in the desserts array.
- let desserts2 = ["Ice Cream", "Pie", "Pudding", "Cake"];
- let checkDesserts2 = desserts2.indexOf("Pie") //indexOf vasitesiyle axtardigimiz sozun arr in necenci indeksdeki element oldugun bilirik
- console.log(checkDesserts2);
+// // Find the index of "Pie" in the desserts array.
+//  let desserts2 = ["Ice Cream", "Pie", "Pudding", "Cake"];
+//  let checkDesserts2 = desserts2.indexOf("Pie") //indexOf vasitesiyle axtardigimiz sozun arr in necenci indeksdeki element oldugun bilirik
+//  console.log(checkDesserts2);
 
-  let word = "Technology";
-  let word2 = word.split("") // burda stringi arr ceviririk
-  let reverceWord = [] // burdaki arr yuxaridaki herifleri yigmaq ucun saxlayiriq 
-  for (let i = word2.length; i >=0; i--) {
-    reverceWord.push(word2[i]) // burda arr in indexlerin tersine yazdiririq ve menin indexsdeolan herifleri push metodu vasitesiyle bos olan arr qoyuruq
-    
-    
+//   let word = "Technology";
+//   let word2 = word.split("") // burda stringi arr ceviririk
+//   let reverceWord = [] // burdaki arr yuxaridaki herifleri yigmaq ucun saxlayiriq
+//   for (let i = word2.length; i >=0; i--) {
+//     reverceWord.push(word2[i]) // burda arr in indexlerin tersine yazdiririq ve menin indexsdeolan herifleri push metodu vasitesiyle bos olan arr qoyuruq
+
+//   }
+//   console.log(reverceWord.join("")); // burda herifleri birlesdiririk
+
+// const number = [1,2,8,2,5]
+// let arr2 =8
+// for (let i = 0; i < number.length; i++) {
+//   maxArr = number[i]
+//   if (maxArr>arr2) {
+//     arr2 = maxArr
+//   }
+
+// }
+// console.log(arr2);
+
+// let arr = [3, 7, 2, 8, 5, 10];
+//       let el = 0;
+//       for (let i = 0; i < arr.length; i++) {
+//         let maxNum = arr[i];
+//         if (maxNum > el) {
+//           el = maxNum;
+//         }
+//       }
+//       console.log(el);
+
+//tapsiriq 1
+
+// function square(num) {
+//   return num = num*num
+// }
+
+// let result = square(4)
+// console.log(result);
+//tapsiriq 2
+// function meet(name) {
+//   return "hello "+name+"!"
+// }
+// let meetName = meet("Soltan")
+
+// console.log(meetName);
+
+//tapsiriq 3
+
+// function totalSum(a,b) {
+//   return a+b
+// }
+
+// console.log(totalSum(5,6));
+
+// tapsiriq 4
+
+// function totalSum(a,b) {
+//   if (a>b) {
+//     return a
+//   } else{
+//     return b
+//   }
+
+// }
+
+// console.log(totalSum(5,6));
+
+//tapsiriq 5
+
+// function isEvenOrOdd(number) {
+//   if (number%2==0) {
+//     return "cut"
+//   }else{
+//      return "tek"
+//   }
+// }
+
+// console.log(isEvenOrOdd(4));
+
+//tapsiriq 6
+
+// function upperCaseWord(word) {
+//   return word.toUpperCase()
+// }
+// console.log(upperCaseWord("Hello World"));
+
+//tapsiriq 7
+
+// let arr = [1,2,3,4]
+// function sumArr(ar) {
+//   let sumArr = 0
+//    for (let i = 0; i < ar.length; i++) {
+//     sumArr += arr[i]
+
+//   }
+//   return sumArr
+// }
+// let sum =  sumArr(arr)
+// console.log(sum);
+
+//tapsiriq 1
+
+// const arr = [1, 2, 3, 4, 5, 6]
+
+// function cutEde(p) {
+//   let cutEde = []
+//   for (let i = 0; i < p.length; i++) {
+//     if (p[i]%2==0) {
+//       cutEde.push(p[i])
+//     }
+
+//   }
+//   return cutEde
+// }
+// console.log(cutEde(arr));
+
+// assert.strictEqual(check([66, 101], 66), true);
+// assert.strictEqual(check([101, 45, 75, 105, 99, 107], 107), true);
+// assert.strictEqual(check(['t', 'e', 's', 't'], 'e'), true);
+// assert.strictEqual(check(['what', 'a', 'great', 'kata'], 'kat'), false);
+
+// function check(a, x) {
+//  if (a.includes(x)) {
+//   return true
+//  } else{
+//   return false
+//  }
+// }
+// console.log(check(['what', 'a', 'great', 'kata'], 'kat'));
+
+// function sumArr(ar) {
+//   let sum =0
+//   for (let i = 0; i < ar.length; i++) {
+//     sum += ar[i]
+
+//   }
+//   return console.log(sum);
+
+// }
+// sumArr(arr)
+
+// const number = 5
+// function factorial(num) {
+//   let sumNumber =1
+//   for (let i = 2; i <num; i++) {
+//     sumNumber = sumNumber *i
+
+//   }
+//   return sumNumber
+// }
+// console.log(factorial(number));
+
+// const arr = [1,4,11,7]
+// function findMaxNumber(number) {
+//   let num = 0
+//   for (let i = 0; i < number.length; i++) {
+//     if (number[i]>num) {
+//       num = number[i]
+
+//     }
+
+//   }
+
+//   return num
+// }
+
+// console.log(findMaxNumber(arr));
+
+//  const word = 'Helloo'
+//   function reverseString(str) {
+//     let reverseStr= []
+//  for (let i = str.length-1; i >=0; i--) {
+//    str.split(" ")
+//   reverseStr.push(str[i])
+
+//  }
+//      return reverseStr.join("")
+//   }
+//   console.log(reverseString(word));
+
+function isPrime(number) {
+  if (number <= 1) {
+    return false;
+  } else if (number % 2 == 0) {
+    return false;
+  } else {
+    for (let i = 0; i < number; i++) {
+      if (number % i == 0) {
+        return false;
+      } else {
+        return true;
+      }
+    }
   }
-  console.log(reverceWord.join("")); // burda herifleri birlesdiririk
-  
-  
- 
+}
 
-
-
-
-
-
- 
- 
-  
- 
-
- 
-
+console.log(isPrime(7));
