@@ -550,20 +550,175 @@
 //   }
 //   console.log(reverseString(word));
 
-function isPrime(number) {
-  if (number <= 1) {
-    return false;
-  } else if (number % 2 == 0) {
-    return false;
-  } else {
-    for (let i = 0; i < number; i++) {
-      if (number % i == 0) {
-        return false;
-      } else {
-        return true;
-      }
+// function isPrime(number) {
+//   if (number <= 1) {
+//     return false;
+//   } else if (number % 2 == 0) {
+//     return false;
+//   } else {
+//     for (let i = 0; i < number; i++) {
+//       if (number % i == 0) {
+//         return false;
+//       } else {
+//         return true;
+//       }
+//     }
+//   }
+// }
+
+// console.log(isPrime(7));
+// const wor = "ayla"
+// let newWord= ''
+// for (let i = wor.length-1; i >=0; i--) {
+//   newWord += wor[i]
+// }
+// if (newWord == wor) {
+//   console.log( wor+" bu soz palindrom sozdur ");
+// }else{
+//   console.log( wor+" bu soz palindrom soz deyil ");
+// }
+
+// Test.assertSimilar(reverseList([1,2,3,4]), [4,3,2,1]);
+// Test.assertSimilar(reverseList([3,1,5,4]), [4,5,1,3]);
+
+// function reverseList(list) {
+// let result = list.split("")
+// console.log(result);
+
+// return result
+// }
+
+//codwors algoritmleri
+//  const arr = [4,3,2,1]
+
+// function reverseList(list) {
+//     let reverseArr = []
+//     for (let i = list.length-1; i >=0 ; i--) {
+//         reverseArr.push(list[i])
+
+//      }
+//     return reverseArr
+//     }
+//  console.log(reverseList(arr));
+
+// it("one", function() {
+//     Test.assertSimilar(humanYearsCatYearsDogYears(1), [1,15,15]);
+//   });
+
+//   it("two", function() {
+//     Test.assertSimilar(humanYearsCatYearsDogYears(2), [2,24,24]);
+//   });
+
+//   it("ten", function() {
+//     Test.assertSimilar(humanYearsCatYearsDogYears(10), [10,56,64]);
+//   });
+
+// var humanYearsCatYearsDogYears = function(humanYears) {
+//     let result =[0,0,0]
+//      for (let i = 0; i <=humanYears; i++) {
+//         if (i==1) {
+//             result = [1,15,15]
+//         } else if (i==2){
+//             result = [10,24,24]
+//         }else if (i>2){
+//             result[0] = i
+//             result[1] +=4
+//             result[2] +=5
+//         }
+//      }
+//     return  result ;
+//   }
+//  const number = 2
+
+//  console.log(humanYearsCatYearsDogYears(number));
+
+// BIRINCI TAPSIRIQ
+function countVowels(w) {
+  let wowelWord = 0;
+  let wowelWord2 = "";
+  for (let i = 0; i < w.length; i++) {
+    if (
+      w[i] === "a" ||
+      w[i] === "o" ||
+      w[i] === "e" ||
+      w[i] === "i" ||
+      w[i] === "u"
+    ) {
+      wowelWord += w[i].length; //eger sayin isteyirikse bu cur
+      wowelWord2 += w[i]; //eger herifleri gostermek isteyirikse bele yaziriq
     }
+  }
+  return wowelWord2;
+}
+const word = "loremabiu";
+
+// console.log(countVowels(word));
+
+//TAPSIRIQ 2
+
+function pairNumber(number) {
+  let pairNum = [];
+  for (let i = 1; i <= number; i++) {
+    if (i % 2 == 0) {
+      pairNum.push(i);
+    }
+  }
+  return pairNum;
+}
+//   console.log( pairNumber(10));
+
+//UCUNCU TAPSIRIQ
+
+const number = 1234785;
+function sumDigits(num) {
+  let lenghtNumber = num.toString();
+  let numberSum = 0;
+  for (let i = 0; i <= lenghtNumber.length; i++) {
+    numberSum += i;
+  }
+  return numberSum;
+}
+// console.log(sumDigits(number));
+
+//DORDUNCU TAPSIRIQ
+
+function multiplicationTable(y) {
+  for (let i = 1; i < 10; i++) {
+    console.log(`${y}*${i}==${y * i}`);
+  }
+}
+// multiplicationTable(5)
+// 5: FizzBuzz
+// Task: Write a function fizzBuzz that prints numbers from 1 to n. But for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers that are multiples of both 3 and 5, print "FizzBuzz".
+// fizzBuzz(15);
+// Output:
+// 1
+// 2
+// Fizz
+// 4
+// Buzz
+// Fizz
+// 7
+// 8
+// Fizz
+// Buzz
+// 11
+// Fizz
+// 13
+// 14
+
+function fizzBuzz(n) {
+  for (let i = 0; i <= n; i++) {
+    if (i % 3 == 0) {
+      console.log("Fizzi");
+    }
+     else if (i % 5 == 0) {
+      console.log("Buzz");}
+      else{
+        console.log(i);
+        
+      }
   }
 }
 
-console.log(isPrime(7));
+// fizzBuzz(15)
