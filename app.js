@@ -687,6 +687,8 @@ function multiplicationTable(y) {
     console.log(`${y}*${i}==${y * i}`);
   }
 }
+
+
 // multiplicationTable(5)
 // 5: FizzBuzz
 // Task: Write a function fizzBuzz that prints numbers from 1 to n. But for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers that are multiples of both 3 and 5, print "FizzBuzz".
@@ -706,7 +708,7 @@ function multiplicationTable(y) {
 // Fizz
 // 13
 // 14
-
+//DORDUNCU TAPSIRIQ
 function fizzBuzz(n) {
   for (let i = 0; i <= n; i++) {
     if (i % 3 == 0) {
