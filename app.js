@@ -633,61 +633,60 @@
 //  console.log(humanYearsCatYearsDogYears(number));
 
 // BIRINCI TAPSIRIQ
-function countVowels(w) {
-  let wowelWord = 0;
-  let wowelWord2 = "";
-  for (let i = 0; i < w.length; i++) {
-    if (
-      w[i] === "a" ||
-      w[i] === "o" ||
-      w[i] === "e" ||
-      w[i] === "i" ||
-      w[i] === "u"
-    ) {
-      wowelWord += w[i].length; //eger sayin isteyirikse bu cur
-      wowelWord2 += w[i]; //eger herifleri gostermek isteyirikse bele yaziriq
-    }
-  }
-  return wowelWord2;
-}
-const word = "loremabiu";
+// function countVowels(w) {
+//   let wowelWord = 0;
+//   let wowelWord2 = "";
+//   for (let i = 0; i < w.length; i++) {
+//     if (
+//       w[i] === "a" ||
+//       w[i] === "o" ||
+//       w[i] === "e" ||
+//       w[i] === "i" ||
+//       w[i] === "u"
+//     ) {
+//       wowelWord += w[i].length; //eger sayin isteyirikse bu cur
+//       wowelWord2 += w[i]; //eger herifleri gostermek isteyirikse bele yaziriq
+//     }
+//   }
+//   return wowelWord2;
+// }
+// const word = "loremabiu";
 
 // console.log(countVowels(word));
 
 //TAPSIRIQ 2
 
-function pairNumber(number) {
-  let pairNum = [];
-  for (let i = 1; i <= number; i++) {
-    if (i % 2 == 0) {
-      pairNum.push(i);
-    }
-  }
-  return pairNum;
-}
+// function pairNumber(number) {
+//   let pairNum = [];
+//   for (let i = 1; i <= number; i++) {
+//     if (i % 2 == 0) {
+//       pairNum.push(i);
+//     }
+//   }
+//   return pairNum;
+// }
 //   console.log( pairNumber(10));
 
 //UCUNCU TAPSIRIQ
 
-const number = 1234785;
-function sumDigits(num) {
-  let lenghtNumber = num.toString();
-  let numberSum = 0;
-  for (let i = 0; i <= lenghtNumber.length; i++) {
-    numberSum += i;
-  }
-  return numberSum;
-}
+// const number = 1234785;
+// function sumDigits(num) {
+//   let lenghtNumber = num.toString();
+//   let numberSum = 0;
+//   for (let i = 0; i <= lenghtNumber.length; i++) {
+//     numberSum += i;
+//   }
+//   return numberSum;
+// }
 // console.log(sumDigits(number));
 
 //DORDUNCU TAPSIRIQ
 
-function multiplicationTable(y) {
-  for (let i = 1; i < 10; i++) {
-    console.log(`${y}*${i}==${y * i}`);
-  }
-}
-
+// function multiplicationTable(y) {
+//   for (let i = 1; i < 10; i++) {
+//     console.log(`${y}*${i}==${y * i}`);
+//   }
+// }
 
 // multiplicationTable(5)
 // 5: FizzBuzz
@@ -709,18 +708,191 @@ function multiplicationTable(y) {
 // 13
 // 14
 //DORDUNCU TAPSIRIQ
-function fizzBuzz(n) {
-  for (let i = 0; i <= n; i++) {
-    if (i % 3 == 0) {
-      console.log("Fizzi");
-    }
-     else if (i % 5 == 0) {
-      console.log("Buzz");}
-      else{
-        console.log(i);
-        
-      }
-  }
-}
+// function fizzBuzz(n) {
+//   for (let i = 0; i <= n; i++) {
+//     if (i % 3 == 0) {
+//       console.log("Fizzi");
+//     } else if (i % 5 == 0) {
+//       console.log("Buzz");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
 
 // fizzBuzz(15)
+
+// Exercise 1: Basic Callback Function
+
+//TAPSIRIQ 1
+
+// function addNumbers(a) {
+//   return a;
+// }
+// function performOperation(number, Callback) {
+//   return Callback(number);
+// }
+
+// console.log(performOperation(10,addNumbers));
+
+//TAPSIRIQ 2
+// function dobuleNumber(n) {
+//   let newNumber = [];
+//   for (let i = 0; i <= n.length - 1; i++) {
+//     newNumber.push(2 * n[i]);
+//   }
+//   return newNumber;
+// }
+
+// let num = [1, 2, 3];
+// console.log(dobuleNumber(num));
+// function callBack(arr, call) {
+//   return call(arr);
+// }
+//
+//TAPSIRIQ 3
+// function filterArray(x) {
+//   let pairNumber = [];
+//   for (let i = 0; i < x.length; i++) {
+//     if (x[i] % 2 == 0) {
+//       pairNumber.push(x[i]);
+//     }
+//   }
+//   return pairNumber;
+// }
+
+// const newArr = [1, 2, 4, 5, 7, 8];
+// function callBackFilter(arr, funk) {
+//   return funk(arr);
+// }
+
+// console.log(callBackFilter(newArr,filterArray));
+
+//TAPSIRIQ 4
+
+// let numbers = [3, 8, 2, 10, 5];
+// let maxNumber = Math.max(...numbers);
+// console.log(maxNumber);
+
+//TAPSIRIQ 5
+// let numbers2 = [15, 7, 9, 2, 12];
+// let minNumber = Math.min(...numbers2);
+
+// console.log(minNumber);
+//TAPSIRIQ 6
+// let num2 = 8.9;
+// let floored = Math.floor(num2);
+// console.log(floored);
+//TAPSIRIQ 6
+// let num3 = 4.1;
+// let ceiled = Math.ceil(num3);
+
+// console.log(ceiled);
+//TAPSIRIQ 7
+// let num4 = 6.75;
+// let rounded = Math.round(num4);
+
+// console.log(rounded);
+
+//TAPSIRIQ 8
+
+// let num5 = -20;
+// let absoluteValue = Math.abs(num5);
+// console.log(absoluteValue);
+//TAPSIRIQ 9
+// let num6 = 64;
+// let sqrtValue = Math.sqrt(num6);
+// console.log(sqrtValue);
+
+//TAPSIRIQ 10
+// let base = 5;
+// let exponent = 3;
+// let power = Math.pow(base, exponent);
+
+// console.log(power);
+
+//TAPSIRIQ 11
+// let randomNumber = Math.random();
+// console.log(randomNumber);
+
+//TAPSIRIQ 12
+
+// birnci sual
+// let num7 = 15.987;
+// let truncated = Math.trunc(num7);
+// console.log(truncated);
+
+// let numbers3 = [12, 45,99, 67, 89, 23, 5];
+// let n = 0
+// for (let i = 0; i < numbers3.length; i++) {
+// if (numbers3[i]>n) {
+//   n = numbers3[i]
+// }
+// }
+
+// console.log(n);
+
+// ikici sual
+// let numbers5 = [1, 2, 3, 4, 5, 6, 7, 8];
+// let newNumber5 = []
+// numbers5.filter((item)=>{
+//   if (item%2==0) {
+//   //  newNumber5.push(item) 
+//   }
+// })
+// console.log(newNumber5);
+
+// let numbers8 = [3, 7, 1, 9];
+
+//  numbers8.forEach((item)=>{
+//   newNumber5.push(item*2)
+  
+// })
+// console.log(newNumber5);
+
+// let l = [10, 20, 30, 40];
+// let x = l.reverse()
+// console.log(x);
+
+
+// let fruits = ["banana", "orange", "apple", "grape"];
+// console.log(fruits.includes("apple"));
+
+// let words = ["Coding", "is", "fun"];
+// const sentence = `${words[0]} ${words[1]} ${words[2]}`
+
+// console.log(sentence);
+
+
+// let numbe = [5, 10, 15, 20];
+// let sumNum = 0
+
+// for (let i = 0; i < numbe.length; i++) {
+//   sumNum += numbe[i] 
+// }
+// console.log(sumNum);
+
+
+// let numbers = [1, 2, 2, 3, 4, 4, 5];
+
+//  numbers.forEach((item)=>{ 
+// console.log(item !== item )
+// })
+
+// let numbers = [100, 200, 300, 400, 500];
+
+// let neNum = numbers.splice(0,3)
+// // console.log(neNum);
+
+// let words = ["javascript", "html", "css"];
+// words.forEach(element => {
+//   console.log(element.toLocaleUpperCase());
+// });
+
+
+
+
+
+
+
+
