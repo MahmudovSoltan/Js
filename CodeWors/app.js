@@ -28,7 +28,6 @@
 // assert.strictEqual(litres(1787), 893, 'should return 893 litres');
 // assert.strictEqual(litres(0), 0, 'should return 0 litres');
 
-
 // function litres(time) {
 //   let rselte = Math.floor(time);
 //   let rselte2 = rselte / 2;
@@ -36,9 +35,56 @@
 // }
 
 // console.log(litres(1787));
+// assert.deepEqual(createArray(1),[1]);
+// assert.deepEqual(createArray(2),[1,2]);
+// assert.deepEqual(createArray(3),[1,2,3]);
+// assert.deepEqual(createArray(4),[1,2,3,4]);
+// assert.deepEqual(createArray(5),[1,2,3,4,5]);
+
+// function createArray(number){
+//    var newArray = [];
+
+//    for(var counter = 1; counter <= number; counter++){
+//      newArray.push(counter);
+//    }
+//    return newArray;
+//  }
+
+//  console.log(createArray(5));
+
+// test('', null);
+// test('1', null);
+// test('A1,B2', null);
+// test('1,2,3', '2');
+// test('1,2,3,4', '2 3');
+// test('A1,B2,C3,D4,E5', 'B2 C3 D4');
+// test('A,1,23,456,78,9,Z', '1 23 456 78 9');
+
+let words = "A1,B2,C3,D4,E5";
+
+// let arrWor = words.split(",");
+// arrWor.shift();
+// arrWor.pop()
+// let string = arrWor.toString(" ")
+// console.log(string);
 
 
-function formatMoney(amount){
-   return 
-  }
+// console.log(arrWor);
+function array(string) {
+   let arrWor = string.split(",");
+   arrWor.shift(); 
+   arrWor.pop()
+   let strings = arrWor.toString("")
+   const replace = strings.replaceAll(",", " ")
+   if (replace == 0) {
+      return null
+   } else {
+      return replace
+   }
+  
+   
+}
 
+
+
+console.log( array('A1,B2,C3,D4,E5'));
