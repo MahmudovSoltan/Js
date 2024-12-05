@@ -889,6 +889,56 @@
 //   console.log(element.toLocaleUpperCase());
 // });
 
+   //BIRINCI TAPSIRIQ
+let inputArray = [1, 2, 3, 4, 5, 6,8,9,10];
+
+function filterEvenNumbers(numbers) {
+    let pairNum = []
+    numbers.filter(function(item) {
+        if (item%2==0) {
+           pairNum.push(item) 
+        }
+    })
+    return pairNum
+}
+// console.log(`Even numbers: ${filterEvenNumbers(inputArray)}`);
+
+
+//IKINCI TAPSIRIQ
+
+function filterEvenNumbers(numbers) {
+    let pairNum = []
+    numbers.filter(function(item) {
+        if (item%2 !==0) {
+           pairNum.push(item) 
+        }
+    })
+    return pairNum
+}
+// console.log(`Even numbers: ${filterEvenNumbers(inputArray)}`);
+//UCUNCU TAPSIRIQ
+
+// let inputArray2 = [1, 2, 2, 3, 4, 4, 5];
+// function removeDuplicates(numbers) {
+//     let pairNum = []
+//     numbers.forEach(function(item) {
+//         if (!pairNum.includes(item)) {
+//            pairNum.push(item) 
+//         }
+//     })
+//     return pairNum
+// }
+
+// console.log(removeDuplicates(inputArray2));
+
+// console.log(a);
+
+// var a =5
+
+
+
+
+
 
 
 

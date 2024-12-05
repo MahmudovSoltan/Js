@@ -25,9 +25,7 @@ if (chance == 0) {
             alert("Yazdiginiz herif duz deyil")
             chance-=1  
       } 
-}
-
-    
+}  
 }
 alert("Tapdiginiz soz " + newGuessWordArr.join(""))
 
