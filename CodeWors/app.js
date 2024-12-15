@@ -325,4 +325,49 @@ function isPronic(n) {
 //   it('Testing №3 for "9♦"', () => assert.strictEqual(defineSuit('9♦'), 'diamonds'));
 //   it('Testing №4 for "J♥"', () => assert.strictEqual(defineSuit('J♥'), 'hearts'))
 
+// let candidate1 = { minSalary: 120000 },
+//     job1 = { maxSalary: 130000 },
+//     job2 = { maxSalary: 80000 };
+
+// Test.assertEquals(match(candidate1, job1), true);
+// Test.assertEquals(match(candidate1, job2), false);
+//   });
+
+let candidate1 = { minSalary: 120000 };
+let job1 = { maxSalary: 130000 };
+let job2 = { maxSalary: 80000 };
+function match(candidate, job) {
+  if (job.maxSalary ===0||candidate.minSalary===0) {
+    return false
+  }
+  else if (candidate.minSalary >= 190000) {
+    if (job.maxSalary - (candidate.minSalary * 10) / 100 >= 0) {
+      return true;
+    } else {
+      return false;
+    }
+  } else if (job.maxSalary - candidate.minSalary > 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+// console.log(match(candidate1, job2));
+function Counter(value) {
+  this.value = value; 
+}
+
+Counter.prototype.increase = function() {
+return  this.value = this.value+1
+};
+
+Counter.prototype.getValue = function() {
+  return this.value;
+};
+
+Counter.prototype.reset = function () {
+  this.value = 0;
+};
+const coun1 = new Counter(-1)
+
 
