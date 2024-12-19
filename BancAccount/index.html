@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 class="bank_title">Bank Account</h1>
+
+    <div class="bank_container">
+        <div>
+            <div>
+                <h2>Deposit</h2>
+                <div>
+                    <input type="text" id="deposit" placeholder="Enter your amount">
+                    <button id="depositAdd">Add</button>
+                </div>
+            </div>
+            <div>
+                <h2>Withdraw</h2>
+                <div>
+                    <input type="text" id="withdraw" placeholder="Enter your amount">
+                    <button id="withdrawAdd">Add</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="balance_box">
+                <h2>Your Balance</h2>
+                <div id="balance">0 ₼</div>
+            </div>
+            <div class="balance_box">
+                <h2>Your History <button id="historyBtn">Show History</button></h2> 
+                <div id="history"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.bank_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banck_container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+}
+.balance_box{
+    height: 60px;
+}
