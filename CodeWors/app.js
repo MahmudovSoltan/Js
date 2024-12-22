@@ -337,10 +337,9 @@ let candidate1 = { minSalary: 120000 };
 let job1 = { maxSalary: 130000 };
 let job2 = { maxSalary: 80000 };
 function match(candidate, job) {
-  if (job.maxSalary ===0||candidate.minSalary===0) {
-    return false
-  }
-  else if (candidate.minSalary >= 190000) {
+  if (job.maxSalary === 0 || candidate.minSalary === 0) {
+    return false;
+  } else if (candidate.minSalary >= 190000) {
     if (job.maxSalary - (candidate.minSalary * 10) / 100 >= 0) {
       return true;
     } else {
@@ -352,22 +351,96 @@ function match(candidate, job) {
     return false;
   }
 }
-// console.log(match(candidate1, job2));
-function Counter(value) {
-  this.value = value; 
+
+function findAverage(nums) {
+  let sum = 0;
+  for (let i = 0; i < nums.length; i++) {
+    sum += nums[i];
+  }
+
+  let average = sum / nums.length;
+
+  return average;
 }
 
-Counter.prototype.increase = function() {
-return  this.value = this.value+1
-};
+// console.log(findAverage([1]));
 
-Counter.prototype.getValue = function() {
-  return this.value;
-};
+// Test.assertEquals(addExtra([1,2,3]).length, 4)
+// Test.assertEquals(addExtra([1,2]).length, 3)
+// Test.assertEquals(addExtra([]).length, 1)
 
-Counter.prototype.reset = function () {
-  this.value = 0;
-};
-const coun1 = new Counter(-1)
+// console.log(addExtra([]).length);
+
+// var actual = sortByValueAndIndex([ 1, 2, 3, 4, 5 ]);
+// var expected = [ 1, 2, 3, 4, 5 ];
+// assert.deepEqual(actual, expected);
+
+// actual = sortByValueAndIndex([ 23, 2, 3, 4, 5 ]);
+// expected = [ 2, 3, 4, 23, 5 ];
+// assert.deepEqual(actual, expected);
+
+// actual = sortByValueAndIndex([ 26, 2, 3, 4, 5 ]);
+// expected = [ 2, 3, 4, 5, 26 ];
+// assert.deepEqual(actual, expected);
+
+// actual = sortByValueAndIndex([ 9, 5, 1, 4, 3 ]);
+// expected = [ 1, 9, 5, 3, 4 ];
+// assert.deepEqual(actual, expected);
+
+// function sortByValueAndIndex(array) {
+//   return array
+//     .map((value, index) => ({ value, index: index + 1 }))
+//     .sort((a, b) => (a.value * a.index) - (b.value * b.index))
+//     .map(item => item.value);
+// }
+
+// console.log(sortByValueAndIndex([23, 2, 3, 4, 5]));
+
+//
+// Test.assertEquals(isPrime(0),  false, "0 is not prime");
+// Test.assertEquals(isPrime(1),  false, "1 is not prime");
+// Test.assertEquals(isPrime(2),  true, "2 is prime");
+// Test.assertEquals(isPrime(73), true, "73 is prime");
+// Test.assertEquals(isPrime(75), false, "75 is not prime");
+// Test.assertEquals(isPrime(-1), false, "-1 is not prime");
+
+// });
+
+// it("Test prime", () => {
+
+// Test.assertEquals(isPrime(3),  true, "3 is prime");
+// Test.assertEquals(isPrime(5),  true, "5 is prime");
+// Test.assertEquals(isPrime(7),  true, "7 is prime");
+// Test.assertEquals(isPrime(41), true, "41 is prime");
+// Test.assertEquals(isPrime(5099), true, "5099 is prime");
+
+// });
+
+// it("Test not prime", () => {
+
+// Test.assertEquals(isPrime(4),  false, "4 is not prime");
+// Test.assertEquals(isPrime(6),  false, "6 is not prime");
+// Test.assertEquals(isPrime(8),  false, "8 is not prime");
+// Test.assertEquals(isPrime(9), false, "9 is not prime");
+// Test.assertEquals(isPrime(45), false, "45 is not prime");
+// Test.assertEquals(isPrime(-5), false, "-5 is not prime");
+// Test.assertEquals(isPrime(-8), false, "-8 is not prime");
+// Test.assertEquals(isPrime(-41), false, "-41 is not prime");
+//
+
+// function isPrime(num) {
 
 
+//   if (num < 2) {
+//     return false;
+//   }
+//   for (let i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// console.log(isPrime(45));

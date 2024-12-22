@@ -24,7 +24,7 @@
 //   text2.innerHTML="suscipit maiores hic minima? Aliquam, molestiae!"
 // })
 
-// // DORDUNCU TAPSIRIQ 
+// // DORDUNCU TAPSIRIQ
 // const image = document.querySelector("#image")
 
 // const quotes = [
@@ -72,7 +72,7 @@
 // ];
 
 // const add = document.querySelector("#add")
-// const paragraf = document.querySelector("#paragraf") 
+// const paragraf = document.querySelector("#paragraf")
 // const head = document.querySelector("#head")
 // paragraf.innerHTML=quotes[1].person
 // head.innerHTML=quotes[1].quote
@@ -82,19 +82,15 @@
 //   paragraf.innerHTML=quotes[index].person
 // })
 
-
 // const gozlemedeOlanData = window.navigator.getBattery();
 
-
-const btnShowBattery = document.querySelector("#btnShowBattery")
-const batteryPercentage = document.querySelector("#batteryPercentage")
-btnShowBattery.addEventListener("click",()=>{
-  navigator.getBattery().then(function(f){
-    batteryPercentage.innerHTML=f.level*100
-      })
-})
-
-
+const btnShowBattery = document.querySelector("#btnShowBattery");
+const batteryPercentage = document.querySelector("#batteryPercentage");
+btnShowBattery.addEventListener("click", () => {
+  navigator.getBattery().then(function (f) {
+    batteryPercentage.innerHTML = f.level * 100;
+  });
+});
 
 //  Get Current Location using navigator.geolocation.getCurrentPosition()
 // Exercise: Get the user's current latitude and longitude when they click a button.
@@ -102,10 +98,8 @@ btnShowBattery.addEventListener("click",()=>{
 
 // location2.addEventListener("click",()=>{
 //  console.log( navigator.geolocation.getCurrentPositionposition.coords.latitude);
- 
+
 // })
-
-
 
 // const info=document.querySelector("#info")
 // const btn=document.querySelector("#btn")
@@ -118,12 +112,9 @@ btnShowBattery.addEventListener("click",()=>{
 //  })
 // })
 
-
-
 // document.querySelector("#btn").addEventListener("click",()=>{
 //   window.location.href ="https://www.google.com/"
 // })
-
 
 // document.querySelector("#btn").addEventListener("click",()=>{
 //   window.history.back()
@@ -132,13 +123,11 @@ btnShowBattery.addEventListener("click",()=>{
 //   window.history.forward()
 // })
 
-
 // document.querySelector("#info").innerHTML=window.navigator.userAgent
 
 // document.querySelector("#reload").addEventListener("click",()=>{
 //   window.location.reload()
 // })
-
 
 // document.querySelector("#checkOnlineStatus").addEventListener("click", () => {
 //   if (navigator.onLine) {
@@ -148,9 +137,75 @@ btnShowBattery.addEventListener("click",()=>{
 //   }
 // });
 
-
 //  Open a new tab to Bing's homepage when the button is clicked.
 
-document.querySelector("#urlBtn").addEventListener("click",()=>{
- window.open("https://www.bing.com/")
-})
+// document.querySelector("#urlBtn").addEventListener("click",()=>{
+//  window.open("https://www.bing.com/")
+// })
+
+
+function scereWitdh() {
+  return window.screen.width;
+}
+
+console.log(scereWitdh());
+
+function userComputeInfo() {
+  return navigator.userAgent;
+}
+
+console.log(userComputeInfo());
+
+function userHostname() {
+  return window.location.hostname;
+}
+
+console.log(userHostname());
+
+function reloadFunc() {
+  window.location.reload();
+}
+
+// setInterval(() => {
+// reloadFunc()
+// }, 1000);
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", () => {
+  goBack();
+});
+function goBack() {
+  window.history.back();
+}
+// setTimeout(() => {  alert("Salam dunya ")}  ,1000);
+
+function timerFunc() {
+  const date = new Date();
+  const seconds = date.getSeconds();
+  console.log(seconds);
+}
+
+setInterval(() => {
+  // timerFunc();
+}, 1000);
+
+
+function linkPage() {
+  window.location.href = "https://www.google.com/";
+}
+
+// setInterval(() => {
+//   linkPage();
+// }, 5000);
+// function openPopup() {
+//   // Popup pəncərəsini açır
+//   const popup = window.open(
+//     "",
+//     "Popup",
+//     "width=200,height=200,left=300,top=200"
+//   );
+//   // Popup pəncərəsində məzmun təyin edir
+//   popup.document.write("<h2>Saytımıza abunə olun!</h2>");
+// }
+
+// openPopup();
