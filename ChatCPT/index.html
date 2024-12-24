@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .date_div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 50px;
+            gap: 30px;
+        }
+        .time_box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            border-radius: 50%;
+            font-size: 70px;
+        }
+    </style>
 </head>
 <body>
-    <h1>ChatCPT</h1>
+    <div class="date_div">
+        <div class="time_box" id="hour"></div>
+        <div class="time_box" id="minute"></div>
+        <div class="time_box" id="second"></div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="game_main_container">
+        <h1>
+            Play Game
+        </h1>
+
+        <div class="game_choose_images">
+            <div class="game_choose_image_left animate-move">
+                <img id="userImage" src="./images/rock.png" alt="">
+            </div>
+            <div class="and">
+                VS
+            </div>
+            <div class="game_choose_image_right animate-move">
+                <img id="comnputerImage" src="./images/rock.png" alt="">
+            </div>
+        </div>
+        <div>
+            <button value="rock">Rock <i class="fa-regular fa-hand-back-fist"></i></button>
+            <button value="parper">Parper <i class="fa-regular fa-hand"></i></button>
+            <button value="scissors">scissors <i class="fa-regular fa-hand-scissors"></i></button>
+        </div>
+        <h4>Score</h4>
+        <div class="score_tabel">
+            <div class="score_tabel_item">Player <div id="player"></div>
+            </div>
+            <div class="score_tabel_item">Drow <div id="drow"></div>
+            </div>
+            <div class="score_tabel_item">Computer <div id="computer"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="start_gaem">
+        <div class="strat_btn">Start Game</div>
+    </div>
+
+    <div class="game_stop">
+        <div class="game_result_box">
+
+           
+
+        </div>
+        <div class="game_box">
+            <div class="main_page">
+                <i class="fa-solid fa-house"></i> Main page
+            </div>
+            <div class="play_again">
+                <i class="fa-solid fa-rotate-right"></i>  Play Again
+            </div>
+            <div class="stop_game">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>  Exit Game</div>
+            
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

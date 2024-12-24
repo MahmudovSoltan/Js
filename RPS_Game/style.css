@@ -1,0 +1,228 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #1e1e2f; /* Tünd, sakitləşdirici fon rəngi */
+  color: #ffffff; /* Ümumi mətndə oxunaqlı ağ rəng */
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.game_main_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 64px;
+  color: #00d4ff; /* Canlı mavi ton */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game_choose_images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid #00d4ff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00d4ff;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: #00d4ff;
+  color: #ffffff;
+  padding: 12px 16px;
+  font-size: 18px;
+  margin: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #00d4ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h4 {
+  text-align: center;
+  font-size: 20px;
+  color: #b0b0b0; /* Neytral açıq boz ton */
+}
+
+span {
+  margin-left: 20px;
+}
+
+.and {
+  font-size: 24px;
+  color: #ff4747; /* Qırmızı xəbərdarlıq tonu */
+}
+
+.score_tabel {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-move {
+  animation: moveUpDown 2s infinite;
+}
+
+.score_tabel_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #00d4ff;
+  font-size: 18px;
+}
+
+.start_gaem {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.strat_btn {
+  z-index: 99;
+  background-color: #00d4ff;
+  border-radius: 15px;
+  padding: 12px 20px;
+  font-size: 24px;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.strat_btn:hover {
+  background-color: #ffffff;
+  color: #00d4ff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.game_stop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(-200%);
+  transition: all 0.5s ease-in-out;
+}
+.game_acrtive {
+  transform: translateY(0);
+}
+.game_result_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(30, 30, 47, 0.95);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.computer_win {
+  text-align: center;
+  font-size: 32px;
+  color: #ff4747;
+}
+
+.game_result_box_btn {
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #00d4ff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.game_result_box_btn:hover {
+  background-color: #ffffff;
+  color: #00d4ff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.player_win {
+  font-size: 32px;
+  font-weight: bolder;
+  color: #00ff7f;
+}
+.desc_player {
+  font-size: 28px;
+  font-weight: bolder;
+  color: #00ff7f;
+}
+.game_box {
+  width: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: white;
+  background-color: chocolate;
+  padding: 10px 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.main_page, .play_again,.stop_game {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.main_page:hover{
+  scale: 1.1;
+}
+ .play_again:hover{
+  scale: 1.1;
+}
+
+
+.stop_game:hover{
+  scale: 1.1;
+}
