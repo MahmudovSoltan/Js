@@ -1,91 +1,45 @@
-// async function getUserInfo() {
-//   const response = await fetch("https://jsonplaceholder.typicode.com/users");
-//   const data = await response.json();
-//   data.forEach((element) => {
-//     console.log(element);
-//     const row = `
-// <tr id=${element.id}>
-//   <td>${element.name}</td>
-//   <td>${element.email}</td>
-// </tr>
+const peoduct_content = document.querySelector("#peoduct_content");
 
-// `;
+async function getProduct() {
+  try {
+    const response = await fetch("https://dummyjson.com/products");
+    const data = await response.json();
+    console.log(data.products);
+    data.products.forEach((element) => {
+      peoduct_content.innerHTML += `
 
-//     body.innerHTML += row;
-//   });
-// }
+      <div class="card" style="width: 18rem;">
+    <img src=${element.images} class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${element.title}</h5>
+      <p class="card-text">${element.description}</p>
 
-// getUserInfo();
-
-// const body = document.querySelector("#body");
-// async function getPost() {
-//   const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-//   const data = await response.json();
-
-//   console.log(data);
-
-//   data.forEach(element => {
-
-//     const list = `
-//     <li>
-//   ${element.title}
-//       </li>
-//   `;
-
-//   body.innerHTML += list
-//   });
-
-// }
-
-// getPost();
-
-// const input = document.querySelector("#input");
-// const button = document.querySelector('button')
-// button.addEventListener('click',getUserPost)
-// async function getUserPost() {
-//   const id = Number(input.value)
-//   const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
-//   const data = await response.json();
-
-//   console.log(data);
-//   const list = `
-//   <div>
-//   Post title:  ${data.title}, <br/>  post  Body: ${data.body}
-//     </div>
-
-// `;
-
-// body.innerHTML += list
-// input.value = ''
-
-// }
-const input = document.querySelector("#input");
-const button = document.querySelector("button");
-button.addEventListener("click", getUserPost);
-async function getUserPost() {
-  const id = Number(input.value);
-  const response = await fetch(
-    `https://jsonplaceholder.typicode.com/posts/${id}/comments`
-  );
-  const data = await response.json();
-
-  console.log(data);
-  data.forEach((element) => {
-    const list = `
-   <li class='border'>
-      Title: ${element.name}
-   </li>
-   <li class='border'>
-  Email: ${element.email}
-   </li>
-   <li class='border'>
-
-  Boody: ${element.body}
-   </li>
-  
-  `;
-    body.innerHTML += list;
-  });
-
-  input.value = "";
+      <div>
+        <div>
+            Price: <span>${element.price}</span>
+        </div>
+        <div>
+           Raiting <span>${element.rating}</span>
+        </div>
+        <div>
+            Tags <span>${element.tags}</span>
+        </div>
+        <div>
+            Stock <span>${element.stock}</span>
+        </div>
+        <div>
+           Brand <span>${element.brand}</span>
+        </div>
+      
+      </div>
+      <a href="./productDetail.html?post_id=${element.id}" class="btn btn-primary">Details</a>
+    </div>
+  </div>
+      `;
+    });
+  } catch (err) {
+    console.log(err);
+  }
 }
+
+getProduct();
